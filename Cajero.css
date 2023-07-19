@@ -265,3 +265,14 @@ body{
 #buttonLogin:hover{
     box-shadow: 0 0 30px #272F59;
 }
+
+/* USER ACCOUNTS */
+.userAccounts{
+    margin-top: 20px;
+    width: 10rem;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
