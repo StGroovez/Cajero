@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Cajero.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <title>Cajero</title>
+</head>
+<body>
+    
+    <!-- Login -->
+    
+    <div id="mainContainer">
+        <div id="message"></div>
+        
+            <div id="menuLogin">
+                <div class="form">
+                  <label id ="text" for="user">Usuario:</label>
+                  <input type="text" id="user" placeholder="Usuario">
+                  <label id ="text_2" for="password">Contraseña:</label>
+                  <input type="password" id="password" placeholder="Contraseña">
+                </div>
+                <button id="buttonLogin">Ingresar</button>
+              
+                
+            </div>
+                
+        <!-- Cajero -->
+        
+        <div id="menu" class="menu">
+            <input type="number" placeholder="Ingresa el monto" id="cash" class="cash">
+            <div id="buttons">
+                <button id="consult" class="consult">Consultar saldo</button>
+                <button id="deposit" class="deposit">Depositar</button>
+                <button id="withdraw" class="withdraw">Retirar</button>
+            </div>
+            <button id="logout" class="logout">Cerrar sesión</button>
+        </div>
+        
+
+    
+    </div>
+    <script src="Cajero.js"></script>
+    
+    
+</body>
+</html>

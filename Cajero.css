@@ -1,0 +1,267 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* reset */
+
+body{
+    background: #272F59;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#mainContainer{
+    width: 35em;
+    height: 55rem;
+    background: #5F5173;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition-duration: 1000ms;
+}
+
+#menuLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 40px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+#user{
+    width: 20rem;
+    height: 3rem;
+    margin-bottom: 60px;
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+    outline: none;
+}
+
+#password{
+    width: 20rem;
+    height: 3rem;
+    margin-bottom: 60px;
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+    outline: none;
+}
+::placeholder{
+    color: rgb(10, 0, 94);
+    font-size: 20px;
+    opacity: 75%;
+}
+
+#buttonLogin{
+    width: 10rem;
+    height: 3rem;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    color: #DED0F2;
+    font-size: 25px;
+    opacity: 75%;
+    background: #272F59;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition-duration: 700ms;
+}
+
+#text{
+    color: #DED0F2;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+#text_2{
+    color: #DED0F2;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+
+/* CAJERO */
+
+.menu{
+    display: none;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 40px;
+}
+
+.logout{
+    display: block;
+    background: #272F59;
+    transition-duration: 700ms;
+}
+
+.cash{
+    display: none;
+    width: 20rem;
+    height: 3rem;
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+    outline: none;
+    background: #dfdfe2;
+}
+
+#buttons{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+#consult{
+    width: 15rem;
+    height: 4rem;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    color: #DED0F2;
+    font-size: 20px;
+    opacity: 75%;
+    margin-bottom: 50px;
+    transition-duration: 700ms;
+    background: #272F59;
+    cursor: pointer;
+}
+
+#deposit{
+    width: 15rem;
+    height: 4rem;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    color: #DED0F2;
+    font-size: 20px;
+    opacity: 75%;
+    margin-bottom: 50px;
+    transition-duration: 700ms;
+    background: #272F59;
+    cursor: pointer;
+}
+
+#withdraw{
+    width: 15rem;
+    height: 4rem;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    color: #DED0F2;
+    font-size: 20px;
+    opacity: 75%;
+    margin-bottom: 50px;
+    transition-duration: 700ms;
+    background: #272F59;
+    cursor: pointer;
+}
+
+#logout{
+    width: 10rem;
+    height: 3rem;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    color: #DED0F2;
+    font-size: 20px;
+    opacity: 75%;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+#message{
+    display: none;
+    color:#272F59;
+    font-size: 40px;
+    background: #9AA3D9;
+    text-align: center;
+    width: 500px;
+    height: 175px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin-top: -75px;
+}
+
+/* HOVER */
+
+#consult:hover{
+    box-shadow: 0 0 30px #272F59;
+}
+#deposit:hover{
+    box-shadow: 0 0 30px #272F59;
+}
+#withdraw:hover{
+    box-shadow: 0 0 30px #272F59;
+}
+
+.logout:hover{
+    box-shadow: 0 0 30px #272F59;
+}
+
+#mainContainer:hover{
+    box-shadow: 0 0 30px black;
+}
+#buttonLogin:hover{
+    box-shadow: 0 0 30px #272F59;
+}
